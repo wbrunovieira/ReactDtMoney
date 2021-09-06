@@ -1,14 +1,12 @@
+import { Summary } from "../Summary";
+import { TransitionsTable } from "../TransactionsTable";
+import { Container } from "./styles";
 
-
-import { Summary } from '../Summary';
-import { TransactionsTable } from '../TransactionsTable';
-
-import { Container } from './styles';
-
-export const Dashboard = () => (
-  <Container>
-    <Summary />
-    <TransactionsTable />
-   
-  </Container>
-);
+export function Dashboard() {
+  return (
+    <Container>
+      <Summary />
+      <TransitionsTable />
+    </Container>
+  );
+}
